@@ -69,6 +69,7 @@
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreenActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -78,6 +79,15 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\ic_action_content_create.png" />
+    <AndroidResource Include="Resources\drawable\ic_action_content_save.png" />
+    <AndroidResource Include="Resources\drawable\ic_menu_copy_holo_dark.png" />
+    <AndroidResource Include="Resources\drawable\ic_menu_cut_holo_dark.png" />
+    <AndroidResource Include="Resources\drawable\ic_menu_paste_holo_dark.png" />
+    <AndroidResource Include="Resources\drawable\ic_menu_search_holo_dark.png" />
+    <AndroidResource Include="Resources\drawable\ic_menu_trash.png" />
+    <AndroidResource Include="Resources\drawable\icon.png" />
+    <AndroidResource Include="Resources\layout\SplashScreen.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\mipmap-hdpi\" />

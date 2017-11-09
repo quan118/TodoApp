@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace TodoApp.Core.Models
 {
     public class Item
@@ -14,6 +15,14 @@ namespace TodoApp.Core.Models
             Title = title;
             Detail = detail;
             IsDone = isDone;
+        }
+
+        public Item(string title, string detail)
+        {
+            Id = (int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalMilliseconds;
+            Title = title;
+            Detail = detail;
+            IsDone = false;
         }
 
         public override string ToString()

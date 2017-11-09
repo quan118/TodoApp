@@ -38,5 +38,15 @@ namespace TodoApp.Droid.Views
             MenuInflater.Inflate(Resource.Menu.adding_item_menu, menu);
             return base.OnCreateOptionsMenu(menu);
         }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == Resource.Id.menu_save)
+            {
+                AssociatedViewModel.SaveItemCommand.Execute(null);
+            }
+
+            return base.OnOptionsItemSelected(item);
+        }
     }
 }

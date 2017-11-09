@@ -11,6 +11,10 @@ namespace TodoApp.Core.Services
         public LocalDataSource()
         {
             Items = new List<Item>();
+
+            Items.Add(new Item(1, "Title 1", "Detail 1", false));
+            Items.Add(new Item(2, "Title 2", "Detail 2", false));
+            Items.Add(new Item(3, "Title 3", "Detail 3", false));
         }
 
         public void AddItem(Item item)

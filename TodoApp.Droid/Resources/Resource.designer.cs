@@ -138,6 +138,9 @@ namespace TodoApp.Droid
 			// aapt resource value: 0x7f040004
 			public const int editText2 = 2130968580;
 			
+			// aapt resource value: 0x7f040008
+			public const int menu_clear_done_items = 2130968584;
+			
 			// aapt resource value: 0x7f040007
 			public const int menu_edit = 2130968583;
 			

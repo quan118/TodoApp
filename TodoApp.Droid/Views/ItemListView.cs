@@ -42,14 +42,21 @@ namespace TodoApp.Droid.Views
 
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
-            IDataSource dataSource = Mvx.Resolve<IDataSource>();
-
-            StringBuilder log = new StringBuilder();
-            foreach (Item task in dataSource.Items)
+            if (item.ItemId == Resource.Id.menu_edit)
             {
-                log.Append(task.ToString() + "\n");
+                AssociatedViewModel.AddItemCommand.Execute(null);
             }
-            Toast.MakeText(this, log.ToString(), ToastLength.Long).Show();
+            else
+            {
+                IDataSource dataSource = Mvx.Resolve<IDataSource>();
+
+                StringBuilder log = new StringBuilder();
+                foreach (Item task in dataSource.Items)
+                {
+                    log.Append(task.ToString() + "\n");
+                }
+                Toast.MakeText(this, log.ToString(), ToastLength.Long).Show();
+            }
 
             return true;
         }

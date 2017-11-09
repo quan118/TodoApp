@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Windows.Input;
 using System.Collections.ObjectModel;
 using MvvmCross.Core.ViewModels;
 using TodoApp.Core.Models;
@@ -23,6 +24,14 @@ namespace TodoApp.Core.ViewModels
             {
                 _items = value;
                 RaisePropertyChanged(() => Items);
+            }
+        }
+
+        public ICommand AddItemCommand
+        {
+            get
+            {
+                return new MvxCommand(() => ShowViewModel<AddingItemViewModel>());
             }
         }
 

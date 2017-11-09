@@ -11,8 +11,8 @@ namespace TodoApp.Core
         public App()
         {
             Mvx.RegisterSingleton<IDataSource>(new LocalDataSource());
-            //Mvx.RegisterSingleton<IMvxAppStart>(new MvxAppStart<ItemListViewModel>());
-            Mvx.RegisterSingleton<IMvxAppStart>(new MvxAppStart<AddingItemViewModel>());
+            Mvx.RegisterSingleton<IMvxAppStart>(new MvxAppStart<ItemListViewModel>());
+            //Mvx.RegisterSingleton<IMvxAppStart>(new MvxAppStart<AddingItemViewModel>());
         }
     }
 }

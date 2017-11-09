@@ -32,5 +32,11 @@ namespace TodoApp.Droid.Views
             SetActionBar(toolbar);
             ActionBar.Title = "Adding Item";
         }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.adding_item_menu, menu);
+            return base.OnCreateOptionsMenu(menu);
+        }
     }
 }

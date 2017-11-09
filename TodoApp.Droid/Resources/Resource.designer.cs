@@ -138,8 +138,11 @@ namespace TodoApp.Droid
 			// aapt resource value: 0x7f040004
 			public const int editText2 = 2130968580;
 			
+			// aapt resource value: 0x7f040007
+			public const int menu_edit = 2130968583;
+			
 			// aapt resource value: 0x7f040006
-			public const int menu_edit = 2130968582;
+			public const int menu_save = 2130968582;
 			
 			// aapt resource value: 0x7f040002
 			public const int toolbar = 2130968578;
@@ -186,7 +189,10 @@ namespace TodoApp.Droid
 		{
 			
 			// aapt resource value: 0x7f070000
-			public const int item_list_view_menu = 2131165184;
+			public const int adding_item_menu = 2131165184;
+			
+			// aapt resource value: 0x7f070001
+			public const int item_list_view_menu = 2131165185;
 			
 			static Menu()
 			{

@@ -97,6 +97,7 @@
     <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\menu\item_list_view_menu.xml" />
     <AndroidResource Include="Resources\layout\AddingItemView.axml" />
+    <AndroidResource Include="Resources\menu\adding_item_menu.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\mipmap-hdpi\" />

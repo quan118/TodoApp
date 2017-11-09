@@ -28,6 +28,9 @@ namespace TodoApp.Droid.Views
         protected override void OnViewModelSet()
         {
             SetContentView(Resource.Layout.AddingItemView);
+            Toolbar toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetActionBar(toolbar);
+            ActionBar.Title = "Adding Item";
         }
     }
 }

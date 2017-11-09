@@ -132,17 +132,17 @@ namespace TodoApp.Droid
 			// aapt resource value: 0x7f040005
 			public const int checkBox1 = 2130968581;
 			
-			// aapt resource value: 0x7f040002
-			public const int editText1 = 2130968578;
-			
 			// aapt resource value: 0x7f040003
-			public const int editText2 = 2130968579;
+			public const int editText1 = 2130968579;
+			
+			// aapt resource value: 0x7f040004
+			public const int editText2 = 2130968580;
 			
 			// aapt resource value: 0x7f040006
 			public const int menu_edit = 2130968582;
 			
-			// aapt resource value: 0x7f040004
-			public const int toolbar = 2130968580;
+			// aapt resource value: 0x7f040002
+			public const int toolbar = 2130968578;
 			
 			static Id()
 			{

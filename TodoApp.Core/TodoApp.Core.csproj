@@ -32,6 +32,8 @@
     <Compile Include="Models\Item.cs" />
     <Compile Include="Services\IDataSource.cs" />
     <Compile Include="Services\LocalDataSource.cs" />
+    <Compile Include="App.cs" />
+    <Compile Include="ViewModels\ItemListViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Platform">

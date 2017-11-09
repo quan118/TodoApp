@@ -72,6 +72,7 @@
     <Compile Include="SplashScreenActivity.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="Views\ItemListView.cs" />
+    <Compile Include="Views\AddingItemView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -95,6 +96,7 @@
     <AndroidResource Include="Resources\layout\Toolbar.axml" />
     <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\menu\item_list_view_menu.xml" />
+    <AndroidResource Include="Resources\layout\AddingItemView.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\mipmap-hdpi\" />

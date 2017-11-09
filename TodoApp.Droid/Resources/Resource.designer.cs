@@ -129,8 +129,11 @@ namespace TodoApp.Droid
 			// aapt resource value: 0x7f040001
 			public const int MvxBindingTagUnique = 2130968577;
 			
+			// aapt resource value: 0x7f040003
+			public const int checkBox1 = 2130968579;
+			
 			// aapt resource value: 0x7f040002
-			public const int checkBox1 = 2130968578;
+			public const int toolbar = 2130968578;
 			
 			static Id()
 			{
@@ -154,6 +157,9 @@ namespace TodoApp.Droid
 			// aapt resource value: 0x7f030002
 			public const int SplashScreen = 2130903042;
 			
+			// aapt resource value: 0x7f030003
+			public const int Toolbar = 2130903043;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -176,6 +182,22 @@ namespace TodoApp.Droid
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int MyTheme = 2131099648;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}

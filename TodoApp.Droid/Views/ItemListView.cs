@@ -29,6 +29,9 @@ namespace TodoApp.Droid.Views
         protected override void OnViewModelSet()
         {
             SetContentView(Resource.Layout.ItemListView);
+            Toolbar toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetActionBar(toolbar);
+            ActionBar.Title = "To-do App";
         }
     }
 }

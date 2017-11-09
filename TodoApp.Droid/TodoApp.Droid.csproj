@@ -90,6 +90,8 @@
     <AndroidResource Include="Resources\drawable\ic_menu_trash.png" />
     <AndroidResource Include="Resources\drawable\icon.png" />
     <AndroidResource Include="Resources\layout\SplashScreen.axml" />
+    <AndroidResource Include="Resources\layout\ItemListView.axml" />
+    <AndroidResource Include="Resources\layout\ListItem.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\mipmap-hdpi\" />

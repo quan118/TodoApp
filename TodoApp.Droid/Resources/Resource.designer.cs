@@ -132,6 +132,9 @@ namespace TodoApp.Droid
 			// aapt resource value: 0x7f040003
 			public const int checkBox1 = 2130968579;
 			
+			// aapt resource value: 0x7f040004
+			public const int menu_edit = 2130968580;
+			
 			// aapt resource value: 0x7f040002
 			public const int toolbar = 2130968578;
 			
@@ -166,6 +169,22 @@ namespace TodoApp.Droid
 			}
 			
 			private Layout()
+			{
+			}
+		}
+		
+		public partial class Menu
+		{
+			
+			// aapt resource value: 0x7f070000
+			public const int item_list_view_menu = 2131165184;
+			
+			static Menu()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Menu()
 			{
 			}
 		}

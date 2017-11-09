@@ -33,5 +33,11 @@ namespace TodoApp.Droid.Views
             SetActionBar(toolbar);
             ActionBar.Title = "To-do App";
         }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.item_list_view_menu, menu);
+            return base.OnCreateOptionsMenu(menu);
+        }
     }
 }

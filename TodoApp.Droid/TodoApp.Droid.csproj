@@ -94,6 +94,7 @@
     <AndroidResource Include="Resources\layout\ListItem.axml" />
     <AndroidResource Include="Resources\layout\Toolbar.axml" />
     <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\menu\item_list_view_menu.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\mipmap-hdpi\" />
@@ -104,6 +105,7 @@
     <Folder Include="Resources\drawable\" />
     <Folder Include="Resources\layout\" />
     <Folder Include="Views\" />
+    <Folder Include="Resources\menu\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TodoApp.Core\TodoApp.Core.csproj">

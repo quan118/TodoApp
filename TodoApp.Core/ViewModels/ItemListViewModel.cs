@@ -35,6 +35,18 @@ namespace TodoApp.Core.ViewModels
             }
         }
 
+        public ICommand ClearDoneItems
+        {
+            get
+            {
+                return new MvxCommand(() =>
+                {
+                    _dataSource.ClearDoneItems();
+                    Refresh();
+                });
+            }
+        }
+
         public ItemListViewModel(IDataSource dataSource)
         {
             _dataSource = dataSource;    

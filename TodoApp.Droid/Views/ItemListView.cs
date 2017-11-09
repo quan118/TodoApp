@@ -46,6 +46,10 @@ namespace TodoApp.Droid.Views
             {
                 AssociatedViewModel.AddItemCommand.Execute(null);
             }
+            else if (item.ItemId == Resource.Id.menu_clear_done_items)
+            {
+                AssociatedViewModel.ClearDoneItems.Execute(null);   
+            }
             else
             {
                 IDataSource dataSource = Mvx.Resolve<IDataSource>();

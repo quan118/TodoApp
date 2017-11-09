@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using TodoApp.Core.Models;
 
@@ -36,6 +37,15 @@ namespace TodoApp.Core.Services
                     Items.Remove(item);
                     break;
                 }
+            }
+        }
+
+        public void ClearDoneItems()
+        {
+            IList<Item> doneItems = Items.Where(item => item.IsDone == true).ToList<Item>();
+            foreach (Item item in doneItems)
+            {
+                RemoveItem(item);
             }
         }
     }

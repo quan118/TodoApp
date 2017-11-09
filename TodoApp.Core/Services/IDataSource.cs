@@ -10,5 +10,6 @@ namespace TodoApp.Core.Services
         void AddItem(Item item);
         void RemoveItem(Item item);
         void RemoveItem(int itemId);
+        void ClearDoneItems();
     }
 }

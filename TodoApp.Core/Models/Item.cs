@@ -15,5 +15,10 @@ namespace TodoApp.Core.Models
             Detail = detail;
             IsDone = isDone;
         }
+
+        public override string ToString()
+        {
+            return string.Format("[Item: Id={0}, Title={1}, Detail={2}, IsDone={3}]", Id, Title, Detail, IsDone);
+        }
     }
 }

@@ -39,5 +39,19 @@ namespace TodoApp.Droid.Views
             MenuInflater.Inflate(Resource.Menu.item_list_view_menu, menu);
             return base.OnCreateOptionsMenu(menu);
         }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            IDataSource dataSource = Mvx.Resolve<IDataSource>();
+
+            StringBuilder log = new StringBuilder();
+            foreach (Item task in dataSource.Items)
+            {
+                log.Append(task.ToString() + "\n");
+            }
+            Toast.MakeText(this, log.ToString(), ToastLength.Long).Show();
+
+            return true;
+        }
     }
 }
